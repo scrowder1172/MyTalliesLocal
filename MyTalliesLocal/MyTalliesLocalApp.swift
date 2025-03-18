@@ -7,14 +7,15 @@
 // Copyright © Playful Logic Studios, LLC 2025. All rights reserved.
 // 
 
-
+import SwiftData
 import SwiftUI
 
 @main
 struct MyTalliesLocalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TallySelectionView()
         }
+        .modelContainer(for: Tally.self)
     }
 }
