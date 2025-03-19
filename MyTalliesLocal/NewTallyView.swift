@@ -9,6 +9,7 @@
 
 import SwiftData
 import SwiftUI
+import WidgetKit
 
 struct NewTallyView: View {
     @Environment(\.modelContext) private var context
@@ -25,6 +26,7 @@ struct NewTallyView: View {
                     let newTally = Tally(name: name)
                     context.insert(newTally)
                     try? context.save()
+                    WidgetCenter.shared.reloadAllTimelines()
                     selectedTally = newTally
                     dismiss()
                 }
