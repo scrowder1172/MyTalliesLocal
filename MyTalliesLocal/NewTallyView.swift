@@ -28,6 +28,7 @@ struct NewTallyView: View {
                     try? context.save()
                     WidgetCenter.shared.reloadAllTimelines()
                     selectedTally = newTally
+                    MyTalliesShortcuts.updateAppShortcutParameters()
                     dismiss()
                 }
                 .buttonStyle(.bordered)

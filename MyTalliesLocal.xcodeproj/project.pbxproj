@@ -63,6 +63,8 @@
 		5286F4BE2D8B0C6B00B0FC12 /* Exceptions for "MyTalliesWidget" folder in "MyTalliesLocal" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				ConfigurableWidget/TallyEntity.swift,
+				ConfigurableWidget/TallyQuery.swift,
 				UpdateTallyIntent.swift,
 			);
 			target = 5286F4802D8A0AE000B0FC12 /* MyTalliesLocal */;

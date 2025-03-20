@@ -14,7 +14,7 @@ import SwiftUI
 @main
 struct MyTalliesWidgetBundle: WidgetBundle {
     var body: some Widget {
-        FirstTallyWidget()
+//        FirstTallyWidget()
         ConfigurableWidget()
     }
 }

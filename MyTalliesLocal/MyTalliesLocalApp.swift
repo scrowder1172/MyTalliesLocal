@@ -13,6 +13,9 @@ import SwiftUI
 @main
 struct MyTalliesLocalApp: App {
     @State private var router = Router()
+    init() {
+        MyTalliesShortcuts.updateAppShortcutParameters()
+    }
     var body: some Scene {
         WindowGroup {
             TallySelectionView()
